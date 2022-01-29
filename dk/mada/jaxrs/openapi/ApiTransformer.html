@@ -94,7 +94,9 @@ loadScripts(document, 'script');</script>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(dk.mada.jaxrs.openapi.ParserOpts,dk.mada.jaxrs.openapi.TypeConverter,java.util.List)" class="member-name-link">ApiTransformer</a><wbr>(<a href="ParserOpts.html" title="class in dk.mada.jaxrs.openapi">ParserOpts</a>&nbsp;parseOpts,
  <a href="TypeConverter.html" title="class in dk.mada.jaxrs.openapi">TypeConverter</a>&nbsp;typeConverter,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../model/SecurityScheme.html" title="class in dk.mada.jaxrs.model">SecurityScheme</a>&gt;&nbsp;securitySchemes)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructs a new API transformer instance.</div>
+</div>
 </div>
 </section>
 </li>
@@ -111,7 +113,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../model/api/Operations.html" title="class in dk.mada.jaxrs.model.api">Operations</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#transform(io.swagger.v3.oas.models.OpenAPI)" class="member-name-link">transform</a><wbr>(io.swagger.v3.oas.models.OpenAPI&nbsp;specification)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Transforms OpenApi specification to operations.</div>
+</div>
 </div>
 </div>
 </div>
@@ -135,6 +139,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ApiTransformer</span><wbr><span class="parameters">(<a href="ParserOpts.html" title="class in dk.mada.jaxrs.openapi">ParserOpts</a>&nbsp;parseOpts,
  <a href="TypeConverter.html" title="class in dk.mada.jaxrs.openapi">TypeConverter</a>&nbsp;typeConverter,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../model/SecurityScheme.html" title="class in dk.mada.jaxrs.model">SecurityScheme</a>&gt;&nbsp;securitySchemes)</span></div>
+<div class="block">Constructs a new API transformer instance.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>parseOpts</code> - Parser options</dd>
+<dd><code>typeConverter</code> - Type converter</dd>
+<dd><code>securitySchemes</code> - Security schemes</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -149,6 +160,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="transform(io.swagger.v3.oas.models.OpenAPI)">
 <h3>transform</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../model/api/Operations.html" title="class in dk.mada.jaxrs.model.api">Operations</a></span>&nbsp;<span class="element-name">transform</span><wbr><span class="parameters">(io.swagger.v3.oas.models.OpenAPI&nbsp;specification)</span></div>
+<div class="block">Transforms OpenApi specification to operations.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>specification</code> - the OpenApi specification</dd>
+<dt>Returns:</dt>
+<dd>Operations in the API</dd>
+</dl>
 </section>
 </li>
 </ul>
