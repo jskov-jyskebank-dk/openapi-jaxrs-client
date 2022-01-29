@@ -80,7 +80,7 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public interface </span><span class="element-name type-name-label">TypeMap</span><span class="extends-implements">
 extends <a href="TypeContainer.html" title="interface in dk.mada.jaxrs.model.types">TypeContainer</a></span></div>
 <div class="block">Keys in a map must be a scalar string.
- 
+
  https://swagger.io/specification/#format</div>
 </section>
 <section class="summary">
@@ -104,7 +104,9 @@ extends <a href="TypeContainer.html" title="interface in dk.mada.jaxrs.model.typ
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="TypeMap.html" title="interface in dk.mada.jaxrs.model.types">TypeMap</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(dk.mada.jaxrs.model.types.Type)" class="member-name-link">of</a><wbr>(<a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a>&nbsp;innerType)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates a new map-type instance.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="TypeNames.TypeName.html" title="class in dk.mada.jaxrs.model.types">TypeNames.TypeName</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#typeName()" class="member-name-link">typeName</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
@@ -132,6 +134,16 @@ extends <a href="TypeContainer.html" title="interface in dk.mada.jaxrs.model.typ
 <section class="detail" id="of(dk.mada.jaxrs.model.types.Type)">
 <h3>of</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="TypeMap.html" title="interface in dk.mada.jaxrs.model.types">TypeMap</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a>&nbsp;innerType)</span></div>
+<div class="block">Creates a new map-type instance.
+
+ The key-type is hardwired to String, but the inner-type is
+ as specified.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>innerType</code> - the type of the map values</dd>
+<dt>Returns:</dt>
+<dd>a new map-type.</dd>
+</dl>
 </section>
 </li>
 <li>

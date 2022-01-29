@@ -78,14 +78,14 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Types</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 <div class="block">Types used in the model for the specification.
- 
+
  Some types will (depending on user options) be converted to
  standard JSE types based on their name.
  This is mainly used for some specifications
  where the OpenApi types are not used directly in properties,
  but instead use a reference to a standalone DTO with the same
  representation.
- 
+
  As the specification has been parsed, the DTOs are consolidated;
  ListFoo-types are changed to <code>List&lt;Foo&gt;</code>. Again, this is due to some
  specifications not using array on the property, but instead references
