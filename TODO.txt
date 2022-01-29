@@ -1,9 +1,0 @@
-o Make options self-documenting
-o Make executable jar
-o Generator option to use primitive types for non-optional fields
-o Handle name conflicts when making identifiers valid.
-  Add counter or something.
-o Prevent keyword collisions in identifiers.
-o Ignore-annotations on bigdecimal/empty_collection option, according to serializer.
-o Avoid this. in getters + add
-o Responses @APIResponse are not handling Maps correctly. Need an example to work from.
