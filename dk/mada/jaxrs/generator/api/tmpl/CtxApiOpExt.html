@@ -90,13 +90,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static dk.mada.jaxrs.generator.api.tmpl.ImmutableCtxApiOpExt.Builder</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns a new builder of this class.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#consumes()" class="member-name-link">consumes</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the @Consumes value for the operation.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#produces()" class="member-name-link">produces</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the @Produces value for the operation.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#responseSchema()" class="member-name-link">responseSchema</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -120,6 +126,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="builder()">
 <h3>builder</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">dk.mada.jaxrs.generator.api.tmpl.ImmutableCtxApiOpExt.Builder</span>&nbsp;<span class="element-name">builder</span>()</div>
+<div class="block">Returns a new builder of this class.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder of this class</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -127,6 +138,11 @@ loadScripts(document, 'script');</script>
 <h3>produces</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">produces</span>()</div>
+<div class="block">Returns the @Produces value for the operation. If null it is not rendered.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the @Produces value for the operation</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -134,6 +150,11 @@ loadScripts(document, 'script');</script>
 <h3>consumes</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">consumes</span>()</div>
+<div class="block">Returns the @Consumes value for the operation. If null it is not rendered.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the @Consumes value for the operation</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -142,9 +163,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">responseSchema</span>()</div>
 <div class="block">Use simpler @APIResponseSchema instead of @APIResponses+@APIResponse.
 
- Only possible for simple classes (not containers).
-
- Returns whether to use the shorter ApiResponseSchema annotation.</div>
+ Only possible for simple classes (not containers).</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the shorter ApiResponseSchema annotation should be used</dd>
+</dl>
 </section>
 </li>
 </ul>
