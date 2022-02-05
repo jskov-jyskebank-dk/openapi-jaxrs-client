@@ -77,7 +77,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">LoggerConfig</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">Loads JUL logging.properties.</div>
+<div class="block">Controls (JUL) logging backend.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -92,6 +92,16 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#enableDebugLogOutput()" class="member-name-link">enableDebugLogOutput</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Configures logger to show debug level output.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#enableTraceLogOutput()" class="member-name-link">enableTraceLogOutput</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Configures logger to show trace level output.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadConfig()" class="member-name-link">loadConfig</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -135,6 +145,20 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>path</code> - resource path of logger configuration</dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="enableDebugLogOutput()">
+<h3>enableDebugLogOutput</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">enableDebugLogOutput</span>()</div>
+<div class="block">Configures logger to show debug level output.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="enableTraceLogOutput()">
+<h3>enableTraceLogOutput</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">enableTraceLogOutput</span>()</div>
+<div class="block">Configures logger to show trace level output.</div>
 </section>
 </li>
 </ul>
