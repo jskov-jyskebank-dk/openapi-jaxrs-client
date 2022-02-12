@@ -83,6 +83,18 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">HttpMethod</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a>&gt;</span></div>
+<div class="block">HTTP methods.
+
+ Ordered as in the RFC.</div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4">HTTP RFC</a></li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc5789#section-2">HTTP PATCH RFC</a></li>
+</ul>
+</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -103,22 +115,42 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Enum Constant</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code><a href="#DELETE" class="member-name-link">DELETE</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#GET" class="member-name-link">GET</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#HEAD" class="member-name-link">HEAD</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#OPTIONS" class="member-name-link">OPTIONS</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#PATCH" class="member-name-link">PATCH</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#POST" class="member-name-link">POST</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#PUT" class="member-name-link">PUT</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#TRACE" class="member-name-link">TRACE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="#CONNECT" class="member-name-link">CONNECT</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Establish a tunnel to the server identified by the target resource.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="#DELETE" class="member-name-link">DELETE</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Remove all current representations of the target resource.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="#GET" class="member-name-link">GET</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Transfer a current representation of the target resource.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="#HEAD" class="member-name-link">HEAD</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Same as GET, but only transfer the status line and header section.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="#OPTIONS" class="member-name-link">OPTIONS</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Describe the communication options for the target resource.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="#PATCH" class="member-name-link">PATCH</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Apply partial modifications to a resource.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="#POST" class="member-name-link">POST</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Perform resource-specific processing on the request payload.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="#PUT" class="member-name-link">PUT</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Replace all current representations of the target resource with the request payload.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="#TRACE" class="member-name-link">TRACE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Perform a message loop-back test along the path to the target resource.</div>
+</div>
 </div>
 </section>
 </li>
@@ -165,51 +197,66 @@ the order they are declared.</div>
 <h2>Enum Constant Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="POST">
-<h3>POST</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">POST</span></div>
-</section>
-</li>
-<li>
 <section class="detail" id="GET">
 <h3>GET</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">GET</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="PUT">
-<h3>PUT</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">PUT</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="PATCH">
-<h3>PATCH</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">PATCH</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="DELETE">
-<h3>DELETE</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">DELETE</span></div>
+<div class="block">Transfer a current representation of the target resource.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="HEAD">
 <h3>HEAD</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">HEAD</span></div>
+<div class="block">Same as GET, but only transfer the status line and header section.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="POST">
+<h3>POST</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">POST</span></div>
+<div class="block">Perform resource-specific processing on the request payload.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="PUT">
+<h3>PUT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">PUT</span></div>
+<div class="block">Replace all current representations of the target resource with the request payload.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="DELETE">
+<h3>DELETE</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">DELETE</span></div>
+<div class="block">Remove all current representations of the target resource.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="CONNECT">
+<h3>CONNECT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">CONNECT</span></div>
+<div class="block">Establish a tunnel to the server identified by the target resource.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="OPTIONS">
 <h3>OPTIONS</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">OPTIONS</span></div>
+<div class="block">Describe the communication options for the target resource.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="TRACE">
 <h3>TRACE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">TRACE</span></div>
+<div class="block">Perform a message loop-back test along the path to the target resource.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="PATCH">
+<h3>PATCH</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="HttpMethod.html" title="enum class in dk.mada.jaxrs.model.api">HttpMethod</a></span>&nbsp;<span class="element-name">PATCH</span></div>
+<div class="block">Apply partial modifications to a resource.</div>
 </section>
 </li>
 </ul>
