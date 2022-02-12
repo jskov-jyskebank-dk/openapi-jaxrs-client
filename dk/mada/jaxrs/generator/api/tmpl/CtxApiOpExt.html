@@ -91,7 +91,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static dk.mada.jaxrs.generator.api.tmpl.ImmutableCtxApiOpExt.Builder</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Returns a new builder of this class.</div>
+<div class="block">Returns a builder for this type.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#consumes()" class="member-name-link">consumes</a>()</code></div>
@@ -102,6 +102,16 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#produces()" class="member-name-link">produces</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the @Produces value for the operation.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#renderJavadocMacroSpacer()" class="member-name-link">renderJavadocMacroSpacer</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns true if a spacer is needed before javadoc macros.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#renderJavadocReturn()" class="member-name-link">renderJavadocReturn</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns true if the javadoc @return statement should be rendered.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#responseSchema()" class="member-name-link">responseSchema</a>()</code></div>
@@ -126,10 +136,32 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="builder()">
 <h3>builder</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">dk.mada.jaxrs.generator.api.tmpl.ImmutableCtxApiOpExt.Builder</span>&nbsp;<span class="element-name">builder</span>()</div>
-<div class="block">Returns a new builder of this class.</div>
+<div class="block">Returns a builder for this type.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>a new builder of this class</dd>
+<dd>a builder for this type</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="renderJavadocMacroSpacer()">
+<h3>renderJavadocMacroSpacer</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">renderJavadocMacroSpacer</span>()</div>
+<div class="block">Returns true if a spacer is needed before javadoc macros.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if a spacer is needed before javadoc macros</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="renderJavadocReturn()">
+<h3>renderJavadocReturn</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">renderJavadocReturn</span>()</div>
+<div class="block">Returns true if the javadoc @return statement should be rendered.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the javadoc @return statement should be rendered</dd>
 </dl>
 </section>
 </li>
