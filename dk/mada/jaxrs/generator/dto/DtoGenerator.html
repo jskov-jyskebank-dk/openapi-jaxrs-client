@@ -43,7 +43,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
@@ -80,21 +80,6 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="summary">
 <ul class="summary-list">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<li>
-<section class="nested-class-summary" id="nested-class-summary">
-<h2>Nested Class Summary</h2>
-<div class="caption"><span>Nested Classes</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static enum&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="DtoGenerator.ExtraTemplate.html" class="type-name-link" title="enum class in dk.mada.jaxrs.generator.dto">DtoGenerator.ExtraTemplate</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <li>
 <section class="constructor-summary" id="constructor-summary">
@@ -107,7 +92,9 @@ loadScripts(document, 'script');</script>
  <a href="../GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a>&nbsp;opts,
  <a href="../Templates.html" title="class in dk.mada.jaxrs.generator">Templates</a>&nbsp;templates,
  <a href="../../model/Model.html" title="class in dk.mada.jaxrs.model">Model</a>&nbsp;model)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructs a new generator.</div>
+</div>
 </div>
 </section>
 </li>
@@ -123,8 +110,10 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#generateDtoClasses(java.nio.file.Path)" class="member-name-link">generateDtoClasses</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link">Path</a>&nbsp;dtoDir)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#generateDtoClasses()" class="member-name-link">generateDtoClasses</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Generate all DTO classes.</div>
+</div>
 </div>
 </div>
 </div>
@@ -149,6 +138,14 @@ loadScripts(document, 'script');</script>
  <a href="../GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a>&nbsp;opts,
  <a href="../Templates.html" title="class in dk.mada.jaxrs.generator">Templates</a>&nbsp;templates,
  <a href="../../model/Model.html" title="class in dk.mada.jaxrs.model">Model</a>&nbsp;model)</span></div>
+<div class="block">Constructs a new generator.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>naming</code> - the naming instance</dd>
+<dd><code>opts</code> - the generator options</dd>
+<dd><code>templates</code> - the templates instance</dd>
+<dd><code>model</code> - the data model</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -160,14 +157,10 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="generateDtoClasses(java.nio.file.Path)">
+<section class="detail" id="generateDtoClasses()">
 <h3>generateDtoClasses</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">generateDtoClasses</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link">Path</a>&nbsp;dtoDir)</span>
-                        throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
-<dl class="notes">
-<dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code></dd>
-</dl>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">generateDtoClasses</span>()</div>
+<div class="block">Generate all DTO classes.</div>
 </section>
 </li>
 </ul>
