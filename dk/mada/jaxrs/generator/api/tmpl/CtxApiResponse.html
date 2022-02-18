@@ -74,6 +74,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="annotations">@Immutable
 </span><span class="modifiers">public interface </span><span class="element-name type-name-label">CtxApiResponse</span></div>
+<div class="block">Template data for an API operation response.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -90,22 +91,34 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#baseType()" class="member-name-link">baseType</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the type of this response, or null.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static dk.mada.jaxrs.generator.api.tmpl.ImmutableCtxApiResponse.Builder</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns a builder for this type.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#code()" class="member-name-link">code</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the HTTP response of this response (or 'default').</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#containerType()" class="member-name-link">containerType</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the container type of this response, or null.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#description()" class="member-name-link">description</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the description of this response.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isUnique()" class="member-name-link">isUnique</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns true if the container is a set (array with unique elements).</div>
+</div>
 </div>
 </div>
 </div>
@@ -124,18 +137,33 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="builder()">
 <h3>builder</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">dk.mada.jaxrs.generator.api.tmpl.ImmutableCtxApiResponse.Builder</span>&nbsp;<span class="element-name">builder</span>()</div>
+<div class="block">Returns a builder for this type.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a builder for this type</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="code()">
 <h3>code</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">code</span>()</div>
+<div class="block">Returns the HTTP response of this response (or 'default').</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the HTTP response of this response (or 'default')</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="description()">
 <h3>description</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">description</span>()</div>
+<div class="block">Returns the description of this response.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the description of this response</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -143,6 +171,11 @@ loadScripts(document, 'script');</script>
 <h3>baseType</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">baseType</span>()</div>
+<div class="block">Returns the type of this response, or null.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the type of this response, or null</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -150,12 +183,22 @@ loadScripts(document, 'script');</script>
 <h3>containerType</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">containerType</span>()</div>
+<div class="block">Returns the container type of this response, or null.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the container type of this response, or null</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isUnique()">
 <h3>isUnique</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isUnique</span>()</div>
+<div class="block">Returns true if the container is a set (array with unique elements).</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the container is a set (array with unique elements)</dd>
+</dl>
 </section>
 </li>
 </ul>

@@ -96,7 +96,9 @@ loadScripts(document, 'script');</script>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(dk.mada.jaxrs.naming.Naming,dk.mada.jaxrs.model.types.Types,dk.mada.jaxrs.openapi.TypeConverter)" class="member-name-link">DtoTransformer</a><wbr>(<a href="../naming/Naming.html" title="class in dk.mada.jaxrs.naming">Naming</a>&nbsp;naming,
  <a href="../model/types/Types.html" title="class in dk.mada.jaxrs.model.types">Types</a>&nbsp;types,
  <a href="TypeConverter.html" title="class in dk.mada.jaxrs.openapi">TypeConverter</a>&nbsp;typeConverter)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructs new DTO transformer.</div>
+</div>
 </div>
 </section>
 </li>
@@ -113,7 +115,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#transform(io.swagger.v3.oas.models.OpenAPI)" class="member-name-link">transform</a><wbr>(io.swagger.v3.oas.models.OpenAPI&nbsp;specification)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Transforms OpenApi specification to types model.</div>
+</div>
 </div>
 </div>
 </div>
@@ -137,6 +141,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">DtoTransformer</span><wbr><span class="parameters">(<a href="../naming/Naming.html" title="class in dk.mada.jaxrs.naming">Naming</a>&nbsp;naming,
  <a href="../model/types/Types.html" title="class in dk.mada.jaxrs.model.types">Types</a>&nbsp;types,
  <a href="TypeConverter.html" title="class in dk.mada.jaxrs.openapi">TypeConverter</a>&nbsp;typeConverter)</span></div>
+<div class="block">Constructs new DTO transformer.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>naming</code> - the naming instance</dd>
+<dd><code>types</code> - the types instance</dd>
+<dd><code>typeConverter</code> - the type converter instance</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -151,6 +162,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="transform(io.swagger.v3.oas.models.OpenAPI)">
 <h3>transform</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">transform</span><wbr><span class="parameters">(io.swagger.v3.oas.models.OpenAPI&nbsp;specification)</span></div>
+<div class="block">Transforms OpenApi specification to types model.
+
+ The types are added to the Types instance as the specification
+ is processed.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>specification</code> - the OpenApi specification</dd>
+</dl>
 </section>
 </li>
 </ul>

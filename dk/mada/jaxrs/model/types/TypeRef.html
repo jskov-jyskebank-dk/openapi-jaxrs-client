@@ -99,7 +99,9 @@ extends <a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type<
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#dereference()" class="member-name-link">dereference</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Accesses the type behind this reference.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isBigDecimal()" class="member-name-link">isBigDecimal</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
@@ -118,7 +120,7 @@ extends <a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type<
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isDto()" class="member-name-link">isDto</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Returns true if this type represents a custom type dto.</div>
+<div class="block">Returns true if this type represents a custom type DTO.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isTime()" class="member-name-link">isTime</a>()</code></div>
@@ -127,26 +129,36 @@ extends <a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type<
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#neededImports()" class="member-name-link">neededImports</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Returns the set of imports needed to use this type in a DTO.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="TypeRef.html" title="interface in dk.mada.jaxrs.model.types">TypeRef</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(dk.mada.jaxrs.model.types.TypeNames.TypeName,dk.mada.jaxrs.model.types.Types)" class="member-name-link">of</a><wbr>(<a href="TypeNames.TypeName.html" title="class in dk.mada.jaxrs.model.types">TypeNames.TypeName</a>&nbsp;refTypeName,
  <a href="Types.html" title="class in dk.mada.jaxrs.model.types">Types</a>&nbsp;types)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates a new type reference.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="TypeNames.TypeName.html" title="class in dk.mada.jaxrs.model.types">TypeNames.TypeName</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#refTypeName()" class="member-name-link">refTypeName</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the referenced type name.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="TypeNames.TypeName.html" title="class in dk.mada.jaxrs.model.types">TypeNames.TypeName</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#typeName()" class="member-name-link">typeName</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Returns the type name.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Types.html" title="class in dk.mada.jaxrs.model.types">Types</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#types()" class="member-name-link">types</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the types instance.</div>
+</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-dk.mada.jaxrs.model.types.Type">Methods inherited from interface&nbsp;dk.mada.jaxrs.model.types.<a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></h3>
-<code><a href="Type.html#isVoid()">isVoid</a>, <a href="Type.html#wrapperTypeName()">wrapperTypeName</a></code></div>
+<code><a href="Type.html#isEnum()">isEnum</a>, <a href="Type.html#isVoid()">isVoid</a>, <a href="Type.html#wrapperTypeName()">wrapperTypeName</a></code></div>
 </section>
 </li>
 </ul>
@@ -163,33 +175,64 @@ extends <a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type<
 <h3>of</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="TypeRef.html" title="interface in dk.mada.jaxrs.model.types">TypeRef</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="TypeNames.TypeName.html" title="class in dk.mada.jaxrs.model.types">TypeNames.TypeName</a>&nbsp;refTypeName,
  <a href="Types.html" title="class in dk.mada.jaxrs.model.types">Types</a>&nbsp;types)</span></div>
+<div class="block">Creates a new type reference.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>refTypeName</code> - the type name</dd>
+<dd><code>types</code> - the types instance</dd>
+<dt>Returns:</dt>
+<dd>a reference to the type name</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="refTypeName()">
 <h3>refTypeName</h3>
 <div class="member-signature"><span class="return-type"><a href="TypeNames.TypeName.html" title="class in dk.mada.jaxrs.model.types">TypeNames.TypeName</a></span>&nbsp;<span class="element-name">refTypeName</span>()</div>
+<div class="block">Returns the referenced type name.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the referenced type name</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="types()">
 <h3>types</h3>
 <div class="member-signature"><span class="return-type"><a href="Types.html" title="class in dk.mada.jaxrs.model.types">Types</a></span>&nbsp;<span class="element-name">types</span>()</div>
+<div class="block">Returns the types instance.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the types instance</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="dereference()">
 <h3>dereference</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></span>&nbsp;<span class="element-name">dereference</span>()</div>
+<div class="block">Accesses the type behind this reference.
+
+ This asserts that conversion has completed and
+ thus that the referenced type should now be
+ accessible.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the referenced type</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="typeName()">
 <h3>typeName</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="TypeNames.TypeName.html" title="class in dk.mada.jaxrs.model.types">TypeNames.TypeName</a></span>&nbsp;<span class="element-name">typeName</span>()</div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="Type.html#typeName()">Type</a></code></span></div>
+<div class="block">Returns the type name.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="Type.html#typeName()">typeName</a></code>&nbsp;in interface&nbsp;<code><a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></code></dd>
+<dt>Returns:</dt>
+<dd>the type name</dd>
 </dl>
 </section>
 </li>
@@ -197,9 +240,13 @@ extends <a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type<
 <section class="detail" id="neededImports()">
 <h3>neededImports</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">neededImports</span>()</div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="Type.html#neededImports()">Type</a></code></span></div>
+<div class="block">Returns the set of imports needed to use this type in a DTO.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="Type.html#neededImports()">neededImports</a></code>&nbsp;in interface&nbsp;<code><a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></code></dd>
+<dt>Returns:</dt>
+<dd>the set of imports needed to use this type in a DTO</dd>
 </dl>
 </section>
 </li>
@@ -250,12 +297,12 @@ extends <a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type<
 <h3>isDto</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isDto</span>()</div>
 <div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="Type.html#isDto()">Type</a></code></span></div>
-<div class="block">Returns true if this type represents a custom type dto.</div>
+<div class="block">Returns true if this type represents a custom type DTO.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="Type.html#isDto()">isDto</a></code>&nbsp;in interface&nbsp;<code><a href="Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></code></dd>
 <dt>Returns:</dt>
-<dd>true if this type represents a custom type dto</dd>
+<dd>true if this type represents a custom type DTO</dd>
 </dl>
 </section>
 </li>

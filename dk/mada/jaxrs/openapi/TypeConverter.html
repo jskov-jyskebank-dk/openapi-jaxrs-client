@@ -75,7 +75,7 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">TypeConverter</span>
+<div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">TypeConverter</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 <div class="block">Converts a specification schema to an internal model type.</div>
 </section>
@@ -89,10 +89,13 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(dk.mada.jaxrs.model.types.Types,dk.mada.jaxrs.openapi.ParserOpts,dk.mada.jaxrs.generator.GeneratorOpts)" class="member-name-link">TypeConverter</a><wbr>(<a href="../model/types/Types.html" title="class in dk.mada.jaxrs.model.types">Types</a>&nbsp;types,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(dk.mada.jaxrs.model.types.Types,dk.mada.jaxrs.naming.Naming,dk.mada.jaxrs.openapi.ParserOpts,dk.mada.jaxrs.generator.GeneratorOpts)" class="member-name-link">TypeConverter</a><wbr>(<a href="../model/types/Types.html" title="class in dk.mada.jaxrs.model.types">Types</a>&nbsp;types,
+ <a href="../naming/Naming.html" title="class in dk.mada.jaxrs.naming">Naming</a>&nbsp;naming,
  <a href="ParserOpts.html" title="class in dk.mada.jaxrs.openapi">ParserOpts</a>&nbsp;parserOpts,
  <a href="../generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a>&nbsp;generatorOpts)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructs a new type converter.</div>
+</div>
 </div>
 </section>
 </li>
@@ -109,7 +112,15 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../model/types/Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toType(io.swagger.v3.oas.models.media.Schema)" class="member-name-link">toType</a><wbr>(io.swagger.v3.oas.models.media.Schema&lt;?&gt;&nbsp;schema)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Converts a OpenApi schema to an internal model type.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../model/types/Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toType(io.swagger.v3.oas.models.media.Schema,java.lang.String)" class="member-name-link">toType</a><wbr>(io.swagger.v3.oas.models.media.Schema&lt;?&gt;&nbsp;schema,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;propertyName)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Converts a OpenApi schema to an internal model type.</div>
+</div>
 </div>
 </div>
 </div>
@@ -128,11 +139,23 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(dk.mada.jaxrs.model.types.Types,dk.mada.jaxrs.openapi.ParserOpts,dk.mada.jaxrs.generator.GeneratorOpts)">
+<section class="detail" id="&lt;init&gt;(dk.mada.jaxrs.model.types.Types,dk.mada.jaxrs.naming.Naming,dk.mada.jaxrs.openapi.ParserOpts,dk.mada.jaxrs.generator.GeneratorOpts)">
 <h3>TypeConverter</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TypeConverter</span><wbr><span class="parameters">(<a href="../model/types/Types.html" title="class in dk.mada.jaxrs.model.types">Types</a>&nbsp;types,
+ <a href="../naming/Naming.html" title="class in dk.mada.jaxrs.naming">Naming</a>&nbsp;naming,
  <a href="ParserOpts.html" title="class in dk.mada.jaxrs.openapi">ParserOpts</a>&nbsp;parserOpts,
  <a href="../generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a>&nbsp;generatorOpts)</span></div>
+<div class="block">Constructs a new type converter.
+
+ This operated by looking up types, creating if missing, in the
+ types instance.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>types</code> - the types instance</dd>
+<dd><code>naming</code> - the naming instance</dd>
+<dd><code>parserOpts</code> - the parser options</dd>
+<dd><code>generatorOpts</code> - the generator options</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -147,6 +170,28 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="toType(io.swagger.v3.oas.models.media.Schema)">
 <h3>toType</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../model/types/Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></span>&nbsp;<span class="element-name">toType</span><wbr><span class="parameters">(io.swagger.v3.oas.models.media.Schema&lt;?&gt;&nbsp;schema)</span></div>
+<div class="block">Converts a OpenApi schema to an internal model type.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>schema</code> - the OpenApi schema to convert</dd>
+<dt>Returns:</dt>
+<dd>the found/created internal model type</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="toType(io.swagger.v3.oas.models.media.Schema,java.lang.String)">
+<h3>toType</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../model/types/Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></span>&nbsp;<span class="element-name">toType</span><wbr><span class="parameters">(io.swagger.v3.oas.models.media.Schema&lt;?&gt;&nbsp;schema,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;propertyName)</span></div>
+<div class="block">Converts a OpenApi schema to an internal model type.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>schema</code> - the OpenApi schema to convert</dd>
+<dd><code>propertyName</code> - name of the property the type is associated with, or null</dd>
+<dt>Returns:</dt>
+<dd>the found/created internal model type</dd>
+</dl>
 </section>
 </li>
 </ul>

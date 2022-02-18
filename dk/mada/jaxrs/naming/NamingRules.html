@@ -93,11 +93,16 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static dk.mada.jaxrs.naming.NamingRules.NamingRule</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toRule(java.lang.String)" class="member-name-link">toRule</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;rIn)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toRule(java.lang.String)" class="member-name-link">toRule</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;ruleConfiguration)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Created a single naming rules based on a single
+ rule configuration.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;dk.mada.jaxrs.naming.NamingRules.NamingRule&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toRules(java.lang.String)" class="member-name-link">toRules</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;rules)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toRules(java.lang.String)" class="member-name-link">toRules</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;ruleConfigurations)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Builds a list of rules based on input configuration.</div>
+</div>
 </div>
 </div>
 </div>
@@ -118,13 +123,33 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="toRules(java.lang.String)">
 <h3>toRules</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;dk.mada.jaxrs.naming.NamingRules.NamingRule&gt;</span>&nbsp;<span class="element-name">toRules</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;rules)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;dk.mada.jaxrs.naming.NamingRules.NamingRule&gt;</span>&nbsp;<span class="element-name">toRules</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;ruleConfigurations)</span></div>
+<div class="block">Builds a list of rules based on input configuration.
+
+ The caller of this method will then be able to compute
+ a named based on an input string, and applying the
+ list of returned naming rules sequentially to this
+ string.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>ruleConfigurations</code> - the rule configurations, separated by ;</dd>
+<dt>Returns:</dt>
+<dd>a list of naming rules to be applied sequentially</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="toRule(java.lang.String)">
 <h3>toRule</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">dk.mada.jaxrs.naming.NamingRules.NamingRule</span>&nbsp;<span class="element-name">toRule</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;rIn)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">dk.mada.jaxrs.naming.NamingRules.NamingRule</span>&nbsp;<span class="element-name">toRule</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;ruleConfiguration)</span></div>
+<div class="block">Created a single naming rules based on a single
+ rule configuration.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>ruleConfiguration</code> - the rule configuration</dd>
+<dt>Returns:</dt>
+<dd>the resulting naming rule</dd>
+</dl>
 </section>
 </li>
 </ul>
