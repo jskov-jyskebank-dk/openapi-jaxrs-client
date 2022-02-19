@@ -169,6 +169,16 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns the time the generation happened if enabled, or null.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJacksonLocalDateDeserializer()" class="member-name-link">getJacksonLocalDateDeserializer</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the jackson LocalDate deserializer class name, or null.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJacksonLocalDateSerializer()" class="member-name-link">getJacksonLocalDateSerializer</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the jackson LocalDate serializer class name, or null.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJacksonLocalDateWireFormat()" class="member-name-link">getJacksonLocalDateWireFormat</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the LocalDate wire format for jackson, or null.</div>
@@ -177,6 +187,16 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJsonSerializeOptions()" class="member-name-link">getJsonSerializeOptions</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns json serialize options.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isAddJacksonLocalDateDeserializerTemplate()" class="member-name-link">isAddJacksonLocalDateDeserializerTemplate</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns true if the extra-template for a jackson LocalDate deserializer should be added, otherwise false.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isAddJacksonLocalDateSerializerTemplate()" class="member-name-link">isAddJacksonLocalDateSerializerTemplate</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns true if the extra-template for a jackson LocalDate serializer should be added, otherwise false.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isJackson()" class="member-name-link">isJackson</a>()</code></div>
@@ -488,6 +508,50 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the LocalDate wire format for jackson, or null</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getJacksonLocalDateDeserializer()">
+<h3>getJacksonLocalDateDeserializer</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getJacksonLocalDateDeserializer</span>()</div>
+<div class="block">Returns the jackson LocalDate deserializer class name, or null.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the jackson LocalDate deserializer class name, or null</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getJacksonLocalDateSerializer()">
+<h3>getJacksonLocalDateSerializer</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getJacksonLocalDateSerializer</span>()</div>
+<div class="block">Returns the jackson LocalDate serializer class name, or null.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the jackson LocalDate serializer class name, or null</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isAddJacksonLocalDateDeserializerTemplate()">
+<h3>isAddJacksonLocalDateDeserializerTemplate</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isAddJacksonLocalDateDeserializerTemplate</span>()</div>
+<div class="block">Returns true if the extra-template for a jackson LocalDate deserializer should be added, otherwise false.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the extra-template for a jackson LocalDate deserializer should be added, otherwise false</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isAddJacksonLocalDateSerializerTemplate()">
+<h3>isAddJacksonLocalDateSerializerTemplate</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isAddJacksonLocalDateSerializerTemplate</span>()</div>
+<div class="block">Returns true if the extra-template for a jackson LocalDate serializer should be added, otherwise false.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the extra-template for a jackson LocalDate serializer should be added, otherwise false</dd>
 </dl>
 </section>
 </li>
