@@ -162,8 +162,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the type of this response, or null.</div>
 </dd>
-<dt><a href="dk/mada/jaxrs/model/types/TypeBigDecimal.html#BIG_DECIMAL" class="member-name-link">BIG_DECIMAL</a> - Static variable in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeBigDecimal.html" title="class in dk.mada.jaxrs.model.types">TypeBigDecimal</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="dk/mada/jaxrs/model/types/Primitive.html#BOOLEAN" class="member-name-link">BOOLEAN</a> - Enum constant in enum class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/Primitive.html" title="enum class in dk.mada.jaxrs.model.types">Primitive</a></dt>
 <dd>
 <div class="block">The boolean.</div>
@@ -806,6 +804,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the type object representing a date.</div>
 </dd>
+<dt><a href="dk/mada/jaxrs/model/types/TypeUUID.html#get()" class="member-name-link">get()</a> - Static method in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeUUID.html" title="class in dk.mada.jaxrs.model.types">TypeUUID</a></dt>
+<dd>
+<div class="block">Returns the type object representing a UUID.</div>
+</dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeVoid.html#get()" class="member-name-link">get()</a> - Static method in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeVoid.html" title="class in dk.mada.jaxrs.model.types">TypeVoid</a></dt>
 <dd>
 <div class="block">Returns the type object representing void.</div>
@@ -1315,6 +1317,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="dk/mada/jaxrs/openapi/ParserOpts.html#isJseOffsetDateTime()" class="member-name-link">isJseOffsetDateTime()</a> - Method in class dk.mada.jaxrs.openapi.<a href="dk/mada/jaxrs/openapi/ParserOpts.html" title="class in dk.mada.jaxrs.openapi">ParserOpts</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="dk/mada/jaxrs/openapi/ParserOpts.html#isJseUUID()" class="member-name-link">isJseUUID()</a> - Method in class dk.mada.jaxrs.openapi.<a href="dk/mada/jaxrs/openapi/ParserOpts.html" title="class in dk.mada.jaxrs.openapi">ParserOpts</a></dt>
+<dd>
+<div class="block">Returns true if the SchemaUUID type is to be treated as java.util.UUID, otherwise false.</div>
+</dd>
 <dt><a href="dk/mada/jaxrs/openapi/ParserOpts.html#isJseZonedDateTime()" class="member-name-link">isJseZonedDateTime()</a> - Method in class dk.mada.jaxrs.openapi.<a href="dk/mada/jaxrs/openapi/ParserOpts.html" title="class in dk.mada.jaxrs.openapi">ParserOpts</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="dk/mada/jaxrs/generator/GeneratorOpts.html#isJsonb()" class="member-name-link">isJsonb()</a> - Method in class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a></dt>
@@ -1697,6 +1703,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="dk/mada/jaxrs/model/types/TypeRef.html#neededImports()" class="member-name-link">neededImports()</a> - Method in interface dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeRef.html" title="interface in dk.mada.jaxrs.model.types">TypeRef</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeSet.html#neededImports()" class="member-name-link">neededImports()</a> - Method in interface dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeSet.html" title="interface in dk.mada.jaxrs.model.types">TypeSet</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="dk/mada/jaxrs/model/types/TypeUUID.html#neededImports()" class="member-name-link">neededImports()</a> - Method in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeUUID.html" title="class in dk.mada.jaxrs.model.types">TypeUUID</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="dk/mada/jaxrs/generator/Imports.html#newApi(dk.mada.jaxrs.model.types.Types,dk.mada.jaxrs.generator.GeneratorOpts)" class="member-name-link">newApi(Types, GeneratorOpts)</a> - Static method in class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/Imports.html" title="class in dk.mada.jaxrs.generator">Imports</a></dt>
 <dd>&nbsp;</dd>
@@ -2134,14 +2142,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Types in the model.</div>
 </dd>
-<dt><a href="dk/mada/jaxrs/model/types/TypeDate.html#TYPE_LOCAL_DATE" class="member-name-link">TYPE_LOCAL_DATE</a> - Static variable in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeDate.html" title="class in dk.mada.jaxrs.model.types">TypeDate</a></dt>
-<dd>
-<div class="block">The type name of LocalDate.</div>
-</dd>
-<dt><a href="dk/mada/jaxrs/model/types/TypeLocalTime.html#TYPE_LOCAL_TIME" class="member-name-link">TYPE_LOCAL_TIME</a> - Static variable in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeLocalTime.html" title="class in dk.mada.jaxrs.model.types">TypeLocalTime</a></dt>
-<dd>
-<div class="block">The type name of LocalTime.</div>
-</dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeArray.html" class="type-name-link" title="interface in dk.mada.jaxrs.model.types">TypeArray</a> - Interface in <a href="dk/mada/jaxrs/model/types/package-summary.html">dk.mada.jaxrs.model.types</a></dt>
 <dd>
 <div class="block">Type representing an array schema.</div>
@@ -2217,11 +2217,29 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeSet.html#typeName()" class="member-name-link">typeName()</a> - Method in interface dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeSet.html" title="interface in dk.mada.jaxrs.model.types">TypeSet</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="dk/mada/jaxrs/model/types/TypeUUID.html#typeName()" class="member-name-link">typeName()</a> - Method in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeUUID.html" title="class in dk.mada.jaxrs.model.types">TypeUUID</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeVoid.html#typeName()" class="member-name-link">typeName()</a> - Method in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeVoid.html" title="class in dk.mada.jaxrs.model.types">TypeVoid</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeNames.TypeName.html#%3Cinit%3E(java.lang.String)" class="member-name-link">TypeName(String)</a> - Constructor for record class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeNames.TypeName.html" title="class in dk.mada.jaxrs.model.types">TypeNames.TypeName</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>TypeName</code> record class.</div>
+</dd>
+<dt><a href="dk/mada/jaxrs/model/types/TypeBigDecimal.html#TYPENAME_BIG_DECIMAL" class="member-name-link">TYPENAME_BIG_DECIMAL</a> - Static variable in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeBigDecimal.html" title="class in dk.mada.jaxrs.model.types">TypeBigDecimal</a></dt>
+<dd>
+<div class="block">The type name for BigDecimal.</div>
+</dd>
+<dt><a href="dk/mada/jaxrs/model/types/TypeDate.html#TYPENAME_LOCAL_DATE" class="member-name-link">TYPENAME_LOCAL_DATE</a> - Static variable in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeDate.html" title="class in dk.mada.jaxrs.model.types">TypeDate</a></dt>
+<dd>
+<div class="block">The type name of LocalDate.</div>
+</dd>
+<dt><a href="dk/mada/jaxrs/model/types/TypeLocalTime.html#TYPENAME_LOCAL_TIME" class="member-name-link">TYPENAME_LOCAL_TIME</a> - Static variable in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeLocalTime.html" title="class in dk.mada.jaxrs.model.types">TypeLocalTime</a></dt>
+<dd>
+<div class="block">The type name of LocalTime.</div>
+</dd>
+<dt><a href="dk/mada/jaxrs/model/types/TypeUUID.html#TYPENAME_UUID" class="member-name-link">TYPENAME_UUID</a> - Static variable in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeUUID.html" title="class in dk.mada.jaxrs.model.types">TypeUUID</a></dt>
+<dd>
+<div class="block">The type name for UUID.</div>
 </dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeNames.html" class="type-name-link" title="class in dk.mada.jaxrs.model.types">TypeNames</a> - Class in <a href="dk/mada/jaxrs/model/types/package-summary.html">dk.mada.jaxrs.model.types</a></dt>
 <dd>
@@ -2260,6 +2278,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="dk/mada/jaxrs/model/types/TypeSet.html" class="type-name-link" title="interface in dk.mada.jaxrs.model.types">TypeSet</a> - Interface in <a href="dk/mada/jaxrs/model/types/package-summary.html">dk.mada.jaxrs.model.types</a></dt>
 <dd>
 <div class="block">Type representing an array schema with unique elements (aka a set).</div>
+</dd>
+<dt><a href="dk/mada/jaxrs/model/types/TypeUUID.html" class="type-name-link" title="class in dk.mada.jaxrs.model.types">TypeUUID</a> - Class in <a href="dk/mada/jaxrs/model/types/package-summary.html">dk.mada.jaxrs.model.types</a></dt>
+<dd>
+<div class="block">Special type for handing UUID type.</div>
 </dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeVoid.html" class="type-name-link" title="class in dk.mada.jaxrs.model.types">TypeVoid</a> - Class in <a href="dk/mada/jaxrs/model/types/package-summary.html">dk.mada.jaxrs.model.types</a></dt>
 <dd>
