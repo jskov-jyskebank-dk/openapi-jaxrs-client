@@ -81,7 +81,8 @@ loadScripts(document, 'script');</script>
 
  https://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.8
 
- A dash causes the following char to be upper-cased (foo-bar becomes fooBar).</div>
+ A dash causes the following char to be upper-cased (foo-bar becomes fooBar).
+ A group of upper-cased chars will be lower cased (FOOBar becomes fooBar).</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -110,14 +111,24 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeValidEdgeTypeName(java.lang.String)" class="member-name-link">makeValidEdgeTypeName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Make a valid type name for java, down-casing on edges.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeValidEdgeVariableName(java.lang.String)" class="member-name-link">makeValidEdgeVariableName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Make a valid variable name for java, down-casing on edges.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeValidTypeName(java.lang.String)" class="member-name-link">makeValidTypeName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Make a valid type name for java (initial character is upper-case).</div>
+<div class="block">Make a valid type name for java.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeValidVariableName(java.lang.String)" class="member-name-link">makeValidVariableName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Make a valid variable name for java (initial character is lower-case).</div>
+<div class="block">Make a valid variable name for java.</div>
 </div>
 </div>
 </div>
@@ -154,7 +165,28 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="makeValidVariableName(java.lang.String)">
 <h3>makeValidVariableName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">makeValidVariableName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</span></div>
-<div class="block">Make a valid variable name for java (initial character is lower-case).</div>
+<div class="block">Make a valid variable name for java.
+
+ The initial character is lower-case.
+
+ Example: FOOBar becomes fOOBar, fooBAR becomes fooBAR</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>input</code> - the name</dd>
+<dt>Returns:</dt>
+<dd>a valid variable name</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="makeValidEdgeVariableName(java.lang.String)">
+<h3>makeValidEdgeVariableName</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">makeValidEdgeVariableName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</span></div>
+<div class="block">Make a valid variable name for java, down-casing on edges.
+
+ The initial character is lower-case.
+
+ Example: FOOBar becomes fooBar, fooBAR becomes fooBar</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>input</code> - the name</dd>
@@ -167,7 +199,28 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="makeValidTypeName(java.lang.String)">
 <h3>makeValidTypeName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">makeValidTypeName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</span></div>
-<div class="block">Make a valid type name for java (initial character is upper-case).</div>
+<div class="block">Make a valid type name for java.
+
+ The initial character is upper-case.
+
+ Example: FOOBar becomes FOOBar, fooBAR becomes FooBAR</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>input</code> - the name</dd>
+<dt>Returns:</dt>
+<dd>a valid type name</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="makeValidEdgeTypeName(java.lang.String)">
+<h3>makeValidEdgeTypeName</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">makeValidEdgeTypeName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</span></div>
+<div class="block">Make a valid type name for java, down-casing on edges.
+
+ The initial character is upper-case.
+
+ Example: FOOBar becomes FooBar, fooBAR becomes FooBar</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>input</code> - the name</dd>
