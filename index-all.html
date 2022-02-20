@@ -1411,21 +1411,25 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns true if collections should be initialized as empty, otherwise will be null.</div>
 </dd>
+<dt><a href="dk/mada/jaxrs/generator/GeneratorOpts.html#isUseJacksonDateTimeSerializer()" class="member-name-link">isUseJacksonDateTimeSerializer()</a> - Method in class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a></dt>
+<dd>
+<div class="block">Returns true if a jackson date-time serializer should be rendered.</div>
+</dd>
 <dt><a href="dk/mada/jaxrs/generator/GeneratorOpts.html#isUseJacksonLocalDateSerializer()" class="member-name-link">isUseJacksonLocalDateSerializer()</a> - Method in class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a></dt>
 <dd>
 <div class="block">Returns true if a jackson LocalDate serializer should be rendered.</div>
-</dd>
-<dt><a href="dk/mada/jaxrs/generator/GeneratorOpts.html#isUseJacksonOffsetDateTimeSerializer()" class="member-name-link">isUseJacksonOffsetDateTimeSerializer()</a> - Method in class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a></dt>
-<dd>
-<div class="block">Returns true if a jackson OffsetDateTime serializer should be rendered.</div>
 </dd>
 <dt><a href="dk/mada/jaxrs/generator/GeneratorOpts.html#isUseJsonSerializeOptions()" class="member-name-link">isUseJsonSerializeOptions()</a> - Method in class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a></dt>
 <dd>
 <div class="block">Returns true if json serializer options should be used.</div>
 </dd>
+<dt><a href="dk/mada/jaxrs/generator/GeneratorOpts.html#isUseLocalDateTime()" class="member-name-link">isUseLocalDateTime()</a> - Method in class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a></dt>
+<dd>
+<div class="block">Returns true if date-time should be rendered with LocalDateTime.</div>
+</dd>
 <dt><a href="dk/mada/jaxrs/generator/GeneratorOpts.html#isUseZonedDateTime()" class="member-name-link">isUseZonedDateTime()</a> - Method in class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/GeneratorOpts.html" title="class in dk.mada.jaxrs.generator">GeneratorOpts</a></dt>
 <dd>
-<div class="block">Returns true if date-time should be rendered with ZonedDateTime, otherwise use OffsetDateTime.</div>
+<div class="block">Returns true if date-time should be rendered with ZonedDateTime.</div>
 </dd>
 <dt><a href="dk/mada/jaxrs/model/types/Type.html#isVoid()" class="member-name-link">isVoid()</a> - Method in interface dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/Type.html" title="interface in dk.mada.jaxrs.model.types">Type</a></dt>
 <dd>
@@ -1494,6 +1498,14 @@ loadScripts(document, 'script');</script>
 <dt><a href="dk/mada/jaxrs/generator/ExtraTemplate.html#LOCAL_DATE_JACKSON_SERIALIZER" class="member-name-link">LOCAL_DATE_JACKSON_SERIALIZER</a> - Enum constant in enum class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/ExtraTemplate.html" title="enum class in dk.mada.jaxrs.generator">ExtraTemplate</a></dt>
 <dd>
 <div class="block">LocalDate Jackson serializer template.</div>
+</dd>
+<dt><a href="dk/mada/jaxrs/generator/ExtraTemplate.html#LOCAL_DATE_TIME_JACKSON_DESERIALIZER" class="member-name-link">LOCAL_DATE_TIME_JACKSON_DESERIALIZER</a> - Enum constant in enum class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/ExtraTemplate.html" title="enum class in dk.mada.jaxrs.generator">ExtraTemplate</a></dt>
+<dd>
+<div class="block">LocalDateTime Jackson deserializer template.</div>
+</dd>
+<dt><a href="dk/mada/jaxrs/generator/ExtraTemplate.html#LOCAL_DATE_TIME_JACKSON_SERIALIZER" class="member-name-link">LOCAL_DATE_TIME_JACKSON_SERIALIZER</a> - Enum constant in enum class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/ExtraTemplate.html" title="enum class in dk.mada.jaxrs.generator">ExtraTemplate</a></dt>
+<dd>
+<div class="block">LocalDateTime Jackson serializer template.</div>
 </dd>
 <dt><a href="dk/mada/logging/LoggerConfig.html" class="type-name-link" title="class in dk.mada.logging">LoggerConfig</a> - Class in <a href="dk/mada/logging/package-summary.html">dk.mada.logging</a></dt>
 <dd>
@@ -1759,11 +1771,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="dk/mada/jaxrs/generator/ExtraTemplate.html#OFFSET_DATE_TIME_JACKSON_DESERIALIZER" class="member-name-link">OFFSET_DATE_TIME_JACKSON_DESERIALIZER</a> - Enum constant in enum class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/ExtraTemplate.html" title="enum class in dk.mada.jaxrs.generator">ExtraTemplate</a></dt>
 <dd>
-<div class="block">OffetDateTime Jackson deserializer template.</div>
+<div class="block">OffsetDateTime Jackson deserializer template.</div>
 </dd>
 <dt><a href="dk/mada/jaxrs/generator/ExtraTemplate.html#OFFSET_DATE_TIME_JACKSON_SERIALIZER" class="member-name-link">OFFSET_DATE_TIME_JACKSON_SERIALIZER</a> - Enum constant in enum class dk.mada.jaxrs.generator.<a href="dk/mada/jaxrs/generator/ExtraTemplate.html" title="enum class in dk.mada.jaxrs.generator">ExtraTemplate</a></dt>
 <dd>
-<div class="block">OffetDateTime Jackson serializer template.</div>
+<div class="block">OffsetDateTime Jackson serializer template.</div>
 </dd>
 <dt><a href="dk/mada/jaxrs/model/types/TypeLocalTime.html#OPENAPI_CUSTOM_FORMAT" class="member-name-link">OPENAPI_CUSTOM_FORMAT</a> - Static variable in class dk.mada.jaxrs.model.types.<a href="dk/mada/jaxrs/model/types/TypeLocalTime.html" title="class in dk.mada.jaxrs.model.types">TypeLocalTime</a></dt>
 <dd>

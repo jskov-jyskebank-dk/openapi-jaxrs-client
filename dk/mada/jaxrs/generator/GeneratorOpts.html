@@ -249,14 +249,14 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns true if collections should be initialized as empty, otherwise will be null.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUseJacksonLocalDateSerializer()" class="member-name-link">isUseJacksonLocalDateSerializer</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUseJacksonDateTimeSerializer()" class="member-name-link">isUseJacksonDateTimeSerializer</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns true if a jackson LocalDate serializer should be rendered.</div>
+<div class="block">Returns true if a jackson date-time serializer should be rendered.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUseJacksonOffsetDateTimeSerializer()" class="member-name-link">isUseJacksonOffsetDateTimeSerializer</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUseJacksonLocalDateSerializer()" class="member-name-link">isUseJacksonLocalDateSerializer</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns true if a jackson OffsetDateTime serializer should be rendered.</div>
+<div class="block">Returns true if a jackson LocalDate serializer should be rendered.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUseJsonSerializeOptions()" class="member-name-link">isUseJsonSerializeOptions</a>()</code></div>
@@ -264,9 +264,14 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns true if json serializer options should be used.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUseZonedDateTime()" class="member-name-link">isUseZonedDateTime</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUseLocalDateTime()" class="member-name-link">isUseLocalDateTime</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns true if date-time should be rendered with ZonedDateTime, otherwise use OffsetDateTime.</div>
+<div class="block">Returns true if date-time should be rendered with LocalDateTime.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUseZonedDateTime()" class="member-name-link">isUseZonedDateTime</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns true if date-time should be rendered with ZonedDateTime.</div>
 </div>
 </div>
 </div>
@@ -479,13 +484,13 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="isUseJacksonOffsetDateTimeSerializer()">
-<h3>isUseJacksonOffsetDateTimeSerializer</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isUseJacksonOffsetDateTimeSerializer</span>()</div>
-<div class="block">Returns true if a jackson OffsetDateTime serializer should be rendered.</div>
+<section class="detail" id="isUseJacksonDateTimeSerializer()">
+<h3>isUseJacksonDateTimeSerializer</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isUseJacksonDateTimeSerializer</span>()</div>
+<div class="block">Returns true if a jackson date-time serializer should be rendered.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>true if a jackson OffsetDateTime serializer should be rendered</dd>
+<dd>true if a jackson date-time serializer should be rendered</dd>
 </dl>
 </section>
 </li>
@@ -592,10 +597,21 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isUseZonedDateTime()">
 <h3>isUseZonedDateTime</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isUseZonedDateTime</span>()</div>
-<div class="block">Returns true if date-time should be rendered with ZonedDateTime, otherwise use OffsetDateTime.</div>
+<div class="block">Returns true if date-time should be rendered with ZonedDateTime.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>true if date-time should be rendered with ZonedDateTime, otherwise use OffsetDateTime</dd>
+<dd>true if date-time should be rendered with ZonedDateTime</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isUseLocalDateTime()">
+<h3>isUseLocalDateTime</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isUseLocalDateTime</span>()</div>
+<div class="block">Returns true if date-time should be rendered with LocalDateTime.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if date-time should be rendered with LocalDateTime</dd>
 </dl>
 </section>
 </li>
